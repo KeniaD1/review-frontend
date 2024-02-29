@@ -1,0 +1,17 @@
+.makeUp-Index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    row-gap: 6vh;
+    column-gap: 10vh;
+
+}
+
+.makeup-list{
+    border : 13px solid pink;
+    display: grid;
+    row-gap: 5vh ;
+    font-size: 20px;
+    justify-content: center;
+    width: 300px;
+
+}

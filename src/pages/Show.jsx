@@ -1,9 +1,10 @@
 import React from 'react';
+import MakeupShow from '../components/MakeupShow/MakeupShow';
 
 function Show(props) {
     return (
         <div>
-            <h1> show page</h1>
+           <MakeupShow />
         </div>
     );
 }
