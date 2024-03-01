@@ -1,10 +1,9 @@
 import React from 'react';
+import Form from '../components/FormComponent/Form';
 
 function New(props) {
     return (
-        <div>
-            <h1> new page</h1>
-        </div>
+        <Form />
     );
 }
 
