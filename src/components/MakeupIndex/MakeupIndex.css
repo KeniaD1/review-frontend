@@ -1,8 +1,9 @@
-.makeUp-Index {
+/* .makeUp-Index {
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
     row-gap: 6vh;
     column-gap: 10vh;
+    
 
 }
 
@@ -13,5 +14,65 @@
     font-size: 20px;
     justify-content: center;
     width: 300px;
+    color: #000;
 
+}
+
+.green {
+    color: green;
+  }
+  
+  .red {
+    color: red;
+  } */
+
+.makeUp-Index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.makeup-list {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.makeup-list:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.makeup-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.makeup-list h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.makeup-list span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.instock {
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import "./MakeupShow.css"
 
 
 
@@ -9,17 +10,17 @@ const API = import.meta.env.VITE_APP_API_URL
 
 const MakeupShow = () => {
 
-    const [ makeupDetails, setMakeupDetails ] = useState({})
+    const [makeupDetails, setMakeupDetails] = useState({})
 
     const { id } = useParams()
 
     const navigate = useNavigate()
 
-function handleDelete() {
-    axios.delete(`${API}/makeup/${id}`)
-    .then(res => navigate ('/makeup'))
-    .catch(err => console.log(err))
-}
+    function handleDelete() {
+        axios.delete(`${API}/makeup/${id}`)
+            .then(res => navigate('/makeup'))
+            .catch(err => console.log(err))
+    }
 
 
 
@@ -33,11 +34,12 @@ function handleDelete() {
         <>
             <div className='makeupShow'>
                 <h2> {makeupDetails.product_name} </h2>
+                <img src= {makeupDetails.image_url} alt='product' />
 
             </div>
 
             <aside className='makeupShow-button'>
-                <Link to = {`/makeup/${id}/edit`}>
+                <Link to={`/makeup/${id}/edit`}>
                     EDIT
                 </Link>
                 <button onClick={() => handleDelete()}>

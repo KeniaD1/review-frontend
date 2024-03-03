@@ -1,0 +1,55 @@
+.makeupShow {
+    text-align: center;
+    margin: 20px;
+}
+
+.makeupShow h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust the color as needed */
+}
+
+.makeupShow img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.makeupShow-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.makeupShow-button a,
+.makeupShow-button button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.makeupShow-button a {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.makeupShow-button a:hover {
+    background-color: #0056b3;
+}
+
+.makeupShow-button button {
+    background-color: #FF4500;
+    color: #fff;
+}
+
+.makeupShow-button button:hover {
+    background-color: #CC3700;
+}

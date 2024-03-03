@@ -31,13 +31,17 @@ const MakeupIndex = () => {
             {
                 allMakeup.map(makeupObj =>
                     <Link to={`/makeup/${makeupObj.id}`} className='makeup-list'>
-                        <span> Product Name :{makeupObj.product_name}</span>
+                        <img src={makeupObj.image_url} alt="product img" />
+                        <h2>  {makeupObj.product_name}</h2>
                         <span>Price : {makeupObj.price}</span>
-                        <span> Instock : {makeupObj.instock ?  "Yes" : "No"}</span>
+
+                        <span className={`instock ${makeupObj.instock ? 'green' : 'red'}`}>
+                            🛒 :{makeupObj.instock ? 'Yes' : 'No'}
+                        </span>
                     </Link>
-                    )
+                )
             }
-        </div>
+        </div >
     );
 };
 
