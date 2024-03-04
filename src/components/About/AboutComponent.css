@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.meImg {
+    max-width: 500px;
+  max-height: 500px;
+    height: 100;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

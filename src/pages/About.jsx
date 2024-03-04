@@ -1,9 +1,11 @@
 import React from 'react';
 
+import AboutComponent from '../components/About/AboutComponent';
+
 function About(props) {
     return (
         <div>
-            <h1> about page </h1>
+            <AboutComponent />
         </div>
     );
 }

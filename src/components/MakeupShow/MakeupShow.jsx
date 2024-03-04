@@ -34,7 +34,8 @@ const MakeupShow = () => {
         <>
             <div className='makeupShow'>
                 <h2> {makeupDetails.product_name} </h2>
-                <img src= {makeupDetails.image_url} alt='product' />
+                <img src={makeupDetails.image_url} alt='product' />
+                <h3> Price ${makeupDetails.price}</h3>
 
             </div>
 

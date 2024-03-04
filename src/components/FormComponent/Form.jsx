@@ -64,11 +64,11 @@ const Form = () => {
     }
     //edit 
     function submitEditForm(event) {
-        event.preventDefault
-        axios.put(`${API}/makeup/${id}`, {
-            ...form
-        })
-        then(res => navigate(`/makeup/${id}`))
+        event.preventDefault()
+        axios.put(`${API}/makeup/${id}`, 
+           form
+        )
+       .then(res => navigate(`/makeup/${id}`))
             .catch(err => console.log(err))
 
     }
@@ -132,6 +132,9 @@ const Form = () => {
                 <span> Price :</span>
                 <input
                     type='number'
+                    required
+                    min={'1'}
+                    max={'500'}
                     id='price'
                     value={form.price}
                     placeholder='$'
