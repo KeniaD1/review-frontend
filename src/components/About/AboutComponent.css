@@ -3,13 +3,22 @@ h1 {
 }
 
 h2 {
+
+    color: rgb(33, 33, 150);
     text-align: center;
+
 }
 
 .meImg {
     max-width: 500px;
-  max-height: 500px;
+    max-height: 500px;
     height: 100;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: rgb(33, 33, 150);
+    text-align: center;
+
 }
